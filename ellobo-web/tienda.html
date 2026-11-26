@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda · Veterinaria El Lobo</title>
+  <meta name="description" content="Medicamentos, alimento y accesorios originales con envíos a todo México.">
+  <link rel="icon" href="assets/logo-isotipo-indigo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-white font-sans text-indigo-700 antialiased">
+
+<header class="sticky top-0 z-40 border-b border-menta-200/70 bg-white/90 backdrop-blur">
+  <div class="contenedor flex h-[84px] items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3" aria-label="Veterinaria El Lobo, inicio">
+      <img src="assets/logo-isotipo-indigo.svg" alt="" class="h-11 w-11">
+    </a>
+    <nav class="hidden items-center gap-10 md:flex" aria-label="Principal"><a href="index.html" class="nav-link">Inicio</a><a href="servicios.html" class="nav-link">Servicios</a><a href="conocenos.html" class="nav-link">Conócenos</a><a href="tienda.html" class="nav-link is-active" aria-current="page">Tienda</a></nav>
+    <div class="flex items-center gap-3">
+        <a href="#mas-vendidos" class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-menta-100 text-indigo-700" aria-label="Carrito">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span data-cart-count class="absolute -right-1 -top-1 hidden h-5 min-w-5 items-center justify-center rounded-full bg-naranja-500 px-1 text-[11px] font-semibold text-white">0</span>
+        </a>
+      <a href="https://wa.me/5218711563912?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20Veterinaria%20El%20Lobo." target="_blank" rel="noopener" class="btn btn-primario hidden sm:inline-flex">Agendar cita</a>
+      <button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-indigo-700 hover:bg-menta-100 md:hidden" data-menu-toggle aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+        <img src="assets/icono-menu.svg" alt="" class="h-6 w-6">
+      </button>
+    </div>
+  </div>
+  <div id="menu-movil" class="hidden border-t border-menta-200 bg-white md:hidden">
+    <nav class="contenedor flex flex-col gap-1 py-4" aria-label="Móvil"><a href="index.html" class="block rounded-xl px-4 py-3 text-base font-medium text-indigo-600 hover:bg-menta-100">Inicio</a><a href="servicios.html" class="block rounded-xl px-4 py-3 text-base font-medium text-indigo-600 hover:bg-menta-100">Servicios</a><a href="conocenos.html" class="block rounded-xl px-4 py-3 text-base font-medium text-indigo-600 hover:bg-menta-100">Conócenos</a><a href="tienda.html" class="block rounded-xl px-4 py-3 text-base font-medium bg-menta-100 text-indigo-700">Tienda</a>
+      <a href="https://wa.me/5218711563912?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20Veterinaria%20El%20Lobo." target="_blank" rel="noopener" class="btn btn-primario mt-3 justify-center">Agendar cita</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="contenedor grid items-center gap-14 py-16 lg:grid-cols-2 lg:py-24">
+  <div class="max-w-xl">
+    <h1 class="text-4xl font-semibold leading-tight text-indigo-700 sm:text-5xl sm:leading-[1.15]">Todo para su salud y bienestar, en un clic.</h1>
+    <p class="mt-6 text-base leading-relaxed text-indigo-600">Medicamentos, alimento y accesorios originales de marcas autorizadas, con asesoría veterinaria para elegir y envíos a todo México.</p>
+    <div class="mt-8 flex flex-wrap gap-3"><a href="#categorias" class="btn btn-primario">Ver productos</a><a href="https://elloboveterinaria.com/collections/promociones" target="_blank" rel="noopener" class="btn btn-contorno">Ver promociones</a></div>
+    <p class="mt-6 text-sm text-indigo-400">Pago con tarjeta y PayPal · Envíos a todo México</p>
+  </div>
+  <div class="relative mx-auto w-full max-w-[568px]">
+    <img src="assets/portada.jpg" alt="Médica veterinaria atendiendo a un perrito en consulta" class="aspect-[568/480] w-full rounded-3xl object-cover">
+        <div class="absolute -bottom-6 left-6 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_30px_-12px_rgba(57,60,100,.35)] sm:-left-8">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-menta-100"><img src="assets/huella-menta.svg" alt="" class="h-6 w-auto"></span>
+          <span><span class="block text-sm font-semibold">Productos originales</span><span class="block text-xs text-indigo-500">de marcas autorizadas</span></span>
+        </div>
+  </div>
+</section>
+<section id="categorias" class="contenedor py-16 lg:py-20">
+  <div class="mb-12 text-center"><h2 class="text-3xl font-semibold">Compra por categoría</h2><span class="mx-auto mt-4 block h-1 w-12 rounded-full bg-naranja-500"></span></div>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <a href="https://elloboveterinaria.com/collections/perro" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-productos.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Perro</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Alimento, antipulgas y cuidado. 231 productos.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/gato" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-productos.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Gato</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Arena, croquetas y salud. 91 productos.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/equinis" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-farmacia.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Equino</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Suplementos, cuidado y manejo. 10 productos.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/bovino" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-farmacia.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Bovino</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Producción, salud y tratamiento. 6 productos.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/perro/Perro-medicamento" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-farmacia.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Medicamentos</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Antiparasitarios, cardiología y más, para cada especie.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/alimento-para-mascotas" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-productos.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Alimentos y nutrición</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Royal Canin, Hill&#x27;s Prescription Diet y más.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/accesorios" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-estetica.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver productos ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Accesorios</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Juguetes, collares y lo necesario para su día a día.</p>
+    </a>
+    <a href="https://elloboveterinaria.com/collections/promociones" target="_blank" rel="noopener" class="tarjeta-servicio group">
+      <div class="flex items-start justify-between">
+        <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white"><img src="assets/icono-caja.svg" alt="" class="h-12 w-12"></span>
+        <span class="text-xs font-semibold text-naranja-600 transition group-hover:translate-x-0.5">Ver ofertas ›</span>
+      </div>
+      <h3 class="mt-6 text-lg font-semibold">Promociones</h3>
+      <p class="mt-2 text-sm leading-relaxed text-indigo-600">Ofertas de temporada por tiempo limitado.</p>
+    </a>
+  </div>
+</section>
+<section id="mas-vendidos" class="contenedor py-16 lg:py-20">
+  <div class="mb-12 text-center"><h2 class="text-3xl font-semibold">Más vendidos</h2><span class="mx-auto mt-4 block h-1 w-12 rounded-full bg-naranja-500"></span></div>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <article class="flex flex-col rounded-2xl border border-menta-300 bg-white p-4">
+      <div class="flex h-48 items-center justify-center rounded-xl bg-menta-100"><img src="assets/icono-productos.svg" alt="" class="h-24 w-24"></div>
+      <p class="mt-4 text-[11px] font-semibold uppercase tracking-wide text-indigo-400">BOEHRINGER INGELHEIM</p>
+      <h3 class="mt-1 text-sm font-semibold leading-snug">NexGard Spectra L (15–30 kg) · 3 tabletas</h3>
+      <p class="mt-3 flex items-baseline gap-2"><span class="text-xl font-semibold text-naranja-600">$680.00</span><span class="text-xs text-indigo-400 line-through">$1,360.00</span></p>
+      <button type="button" class="btn btn-primario btn-sm mt-auto w-full justify-center" data-add-cart data-name="NexGard Spectra L (15–30 kg) · 3 tabletas" style="margin-top:1rem">Agregar al carrito</button>
+    </article>
+    <article class="flex flex-col rounded-2xl border border-menta-300 bg-white p-4">
+      <div class="flex h-48 items-center justify-center rounded-xl bg-menta-100"><img src="assets/icono-productos.svg" alt="" class="h-24 w-24"></div>
+      <p class="mt-4 text-[11px] font-semibold uppercase tracking-wide text-indigo-400">BOEHRINGER INGELHEIM</p>
+      <h3 class="mt-1 text-sm font-semibold leading-snug">NexGard Spectra M (7.6–15 kg) · 3 tabletas</h3>
+      <p class="mt-3 flex items-baseline gap-2"><span class="text-xl font-semibold text-naranja-600">$640.00</span><span class="text-xs text-indigo-400 line-through">$1,279.00</span></p>
+      <button type="button" class="btn btn-primario btn-sm mt-auto w-full justify-center" data-add-cart data-name="NexGard Spectra M (7.6–15 kg) · 3 tabletas" style="margin-top:1rem">Agregar al carrito</button>
+    </article>
+    <article class="flex flex-col rounded-2xl border border-menta-300 bg-white p-4">
+      <div class="flex h-48 items-center justify-center rounded-xl bg-menta-100"><img src="assets/icono-productos.svg" alt="" class="h-24 w-24"></div>
+      <p class="mt-4 text-[11px] font-semibold uppercase tracking-wide text-indigo-400">HILL&#x27;S</p>
+      <h3 class="mt-1 text-sm font-semibold leading-snug">Hill&#x27;s Prescription Diet k/d Kidney Care · lata 370 g</h3>
+      <p class="mt-3 flex items-baseline gap-2"><span class="text-xl font-semibold text-naranja-600">$112.00</span></p>
+      <button type="button" class="btn btn-primario btn-sm mt-auto w-full justify-center" data-add-cart data-name="Hill&#x27;s Prescription Diet k/d Kidney Care · lata 370 g" style="margin-top:1rem">Agregar al carrito</button>
+    </article>
+    <article class="flex flex-col rounded-2xl border border-menta-300 bg-white p-4">
+      <div class="flex h-48 items-center justify-center rounded-xl bg-menta-100"><img src="assets/icono-productos.svg" alt="" class="h-24 w-24"></div>
+      <p class="mt-4 text-[11px] font-semibold uppercase tracking-wide text-indigo-400">ROYAL CANIN</p>
+      <h3 class="mt-1 text-sm font-semibold leading-snug">Renal Support Feline · 3 kg</h3>
+      <p class="mt-3 flex items-baseline gap-2"><span class="text-xl font-semibold text-naranja-600">$952.00</span></p>
+      <button type="button" class="btn btn-primario btn-sm mt-auto w-full justify-center" data-add-cart data-name="Renal Support Feline · 3 kg" style="margin-top:1rem">Agregar al carrito</button>
+    </article>
+  </div>
+  <p class="mt-6 text-center text-xs text-indigo-400">Precios de referencia; consulta disponibilidad y precio vigente en la tienda en línea.</p>
+</section>
+<section class="contenedor py-16 lg:py-20">
+  <div class="mb-12 text-center"><h2 class="text-3xl font-semibold">Compra con confianza</h2><span class="mx-auto mt-4 block h-1 w-12 rounded-full bg-naranja-500"></span></div>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="rounded-3xl bg-menta-400 p-6 text-indigo-700">
+      <img src="assets/huella-blanco.svg" alt="" class="h-8 w-auto">
+      <h3 class="mt-10 text-lg font-semibold">Pago seguro</h3>
+      <p class="mt-2 text-sm leading-relaxed">Con tarjeta o PayPal.</p>
+    </div>
+    <div class="rounded-3xl bg-menta-400 p-6 text-indigo-700">
+      <img src="assets/huella-blanco.svg" alt="" class="h-8 w-auto">
+      <h3 class="mt-10 text-lg font-semibold">Envíos a todo México</h3>
+      <p class="mt-2 text-sm leading-relaxed">Rápidos, bien empacados y con buena fecha de caducidad.</p>
+    </div>
+    <div class="rounded-3xl bg-menta-400 p-6 text-indigo-700">
+      <img src="assets/huella-blanco.svg" alt="" class="h-8 w-auto">
+      <h3 class="mt-10 text-lg font-semibold">Productos originales</h3>
+      <p class="mt-2 text-sm leading-relaxed">Solo marcas y distribuidores autorizados.</p>
+    </div>
+    <div class="rounded-3xl bg-menta-400 p-6 text-indigo-700">
+      <img src="assets/huella-blanco.svg" alt="" class="h-8 w-auto">
+      <h3 class="mt-10 text-lg font-semibold">Asesoría veterinaria</h3>
+      <p class="mt-2 text-sm leading-relaxed">Te ayudamos a elegir lo que tu mascota necesita.</p>
+    </div>
+  </div>
+</section>
+<section class="contenedor grid gap-10 py-16 lg:grid-cols-[1fr_2fr] lg:py-20">
+  <div class="max-w-xs">
+    <div><h2 class="text-2xl font-semibold">Dudas sobre tu compra</h2><span class="mt-4 block h-1 w-12 rounded-full bg-naranja-500"></span></div>
+    <p class="mt-6 text-sm leading-relaxed text-indigo-600">¿No encuentras tu respuesta? Escríbenos por WhatsApp y te ayudamos.</p>
+    <div class="mt-6"><a href="https://wa.me/5218711563912" target="_blank" rel="noopener" class="btn btn-contorno">Escríbenos</a></div>
+  </div>
+  <div class="flex flex-col gap-3">
+      <details class="faq" open>
+        <summary><span>¿Hacen envíos a todo México?</span><span class="faq-signo" aria-hidden="true"></span></summary>
+        <p>Sí. Tu pedido llega bien empacado y con buena fecha de caducidad.</p>
+      </details>
+      <details class="faq">
+        <summary><span>¿Qué formas de pago aceptan?</span><span class="faq-signo" aria-hidden="true"></span></summary>
+        <p>Tarjeta de crédito o débito y PayPal, con pago seguro.</p>
+      </details>
+      <details class="faq">
+        <summary><span>¿Los productos son originales?</span><span class="faq-signo" aria-hidden="true"></span></summary>
+        <p>Sí. Trabajamos solo con marcas y distribuidores autorizados.</p>
+      </details>
+      <details class="faq">
+        <summary><span>¿Puedo pedir factura?</span><span class="faq-signo" aria-hidden="true"></span></summary>
+        <p>Sí. Escríbenos a elloboveterinariaweb@gmail.com con los datos de tu pedido y te la enviamos.</p>
+      </details>
+  </div>
+</section>
+<section class="contenedor py-16 lg:py-20">
+  <div class="relative grid items-center gap-10 overflow-hidden rounded-[32px] bg-indigo-700 px-8 py-14 text-white sm:px-14 lg:grid-cols-[2fr_1fr]">
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wider text-menta-400">Asesoría veterinaria</p>
+      <h2 class="mt-3 text-3xl font-semibold">¿No sabes cuál elegir?</h2>
+      <p class="mt-4 max-w-xl text-sm leading-relaxed text-white/80">Escríbenos por WhatsApp al 871 156 3912 y un médico te ayuda a encontrar lo que tu mascota necesita.</p>
+      <div class="mt-8"><a href="https://wa.me/5218711563912?text=Hola%2C%20necesito%20asesor%C3%ADa%20para%20elegir%20un%20producto." target="_blank" rel="noopener" class="btn btn-secundario">Pedir asesoría</a></div>
+    </div>
+    <div class="flex justify-center lg:justify-end"><img src="assets/logo-isotipo-blanco.svg" alt="" class="hidden h-40 w-40 opacity-90 lg:block"></div>
+  </div>
+</section>
+</main>
+<footer class="bg-menta-400 text-indigo-700">
+  <div class="contenedor grid gap-10 py-16 lg:grid-cols-[1.2fr_3fr]">
+    <div>
+      <img src="assets/logo-horizontal-indigo.svg" alt="Veterinaria El Lobo" class="h-16 w-auto">
+    </div>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div><h3 class="pie-titulo">Contacto</h3>
+        <ul class="pie-lista">
+          <li><a href="mailto:elloboveterinariaweb@gmail.com">elloboveterinariaweb@gmail.com</a></li>
+          <li><a href="https://wa.me/5218711563912" target="_blank" rel="noopener">WhatsApp 871 156 3912</a></li>
+          <li><a href="tel:+528717337661">Centro 871 733 7661</a></li>
+          <li><a href="tel:+528719454100">Viñedos 871 945 4100</a></li>
+        </ul></div>
+      <div><h3 class="pie-titulo">Sucursales</h3>
+        <ul class="pie-lista">
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Veterinaria+El+Lobo+Diagonal+Reforma+Oriente+2002+Torreon" target="_blank" rel="noopener">Centro · Diagonal Reforma Ote. 2002 Bis</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Veterinaria+El+Lobo+Vinedos+Paseo+de+la+Yuca+45+Torreon" target="_blank" rel="noopener">Viñedos · P.º de la Yuca 45, local 3</a></li>
+          <li>Torreón, Coahuila</li>
+        </ul></div>
+      <div><h3 class="pie-titulo">Redes</h3>
+        <ul class="pie-lista">
+          <li><a href="https://www.facebook.com/veterinariaellobo" target="_blank" rel="noopener">Facebook · veterinariaellobo</a></li>
+          <li><a href="https://www.instagram.com/veterinariaellobo/" target="_blank" rel="noopener">Instagram · veterinariaellobo</a></li>
+        </ul></div>
+      <div><h3 class="pie-titulo">Legal</h3>
+        <ul class="pie-lista">
+          <li><a href="https://elloboveterinaria.com/policies/privacy-policy" target="_blank" rel="noopener">Aviso de privacidad</a></li>
+          <li><a href="https://elloboveterinaria.com/policies/shipping-policy" target="_blank" rel="noopener">Envíos y devoluciones</a></li>
+          <li><a href="https://elloboveterinaria.com/policies/terms-of-service" target="_blank" rel="noopener">Términos y condiciones</a></li>
+        </ul></div>
+    </div>
+  </div>
+  <div class="contenedor flex flex-col gap-6 border-t border-indigo-700/15 py-8 md:flex-row md:items-end md:justify-between">
+    <form class="w-full max-w-md" data-boletin>
+      <label for="correo" class="mb-3 block text-sm font-semibold">Recibe promociones y recordatorios</label>
+      <div class="flex gap-3">
+        <input id="correo" type="email" required placeholder="Tu correo electrónico" class="h-11 flex-1 rounded-full border border-white/60 bg-white px-5 text-sm text-indigo-700 placeholder:text-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-700">
+        <button class="btn btn-blanco">Suscribirme</button>
+      </div>
+      <p class="mt-2 hidden text-sm font-medium" data-boletin-ok>¡Listo! Te avisaremos de promociones y recordatorios.</p>
+    </form>
+    <p class="text-xs">© 2026 Veterinaria El Lobo</p>
+  </div>
+</footer>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Componentes de El Lobo (equivalen a los componentes de Figma) */
+html { scroll-behavior: smooth; }
+.contenedor { width: 100%; max-width: 1326px; margin-inline: auto; padding-inline: 1.25rem; }
+@media (min-width: 768px) { .contenedor { padding-inline: 4rem; } }
+
+/* Enlace de navegación */
+.nav-link { position: relative; font-size: .875rem; font-weight: 500; color: #474973; padding-block: .25rem; transition: color .2s; }
+.nav-link:hover { color: #393c64; }
+.nav-link.is-active { color: #393c64; font-weight: 600; }
+.nav-link.is-active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; border-radius: 2px; background: #ef7b28; }
+
+/* Botón: Primario · Secundario · Contorno · Blanco */
+.btn { display: inline-flex; align-items: center; gap: .5rem; height: 2.75rem; padding-inline: 1.5rem; border-radius: 9999px; font-size: .875rem; font-weight: 600; transition: background-color .2s, color .2s, transform .1s, box-shadow .2s; white-space: nowrap; cursor: pointer; }
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 2px solid #393c64; outline-offset: 2px; }
+.btn-sm { height: 2.25rem; padding-inline: 1rem; font-size: .8125rem; }
+.btn-primario { background: #aad7ca; color: #393c64; }
+.btn-primario:hover { background: #9ec9bd; }
+.btn-secundario { background: #ef7b28; color: #fff; }
+.btn-secundario:hover { background: #de7023; }
+.btn-contorno { border: 1.5px solid #393c64; color: #393c64; background: transparent; }
+.btn-contorno:hover { background: #393c64; color: #fff; }
+.btn-blanco { background: #fff; color: #393c64; }
+.btn-blanco:hover { background: #ebf5f3; }
+
+/* Tarjeta de servicio */
+.tarjeta-servicio { display: block; height: 100%; border-radius: 1.5rem; background: #ebf5f3; padding: 1.5rem; transition: box-shadow .2s, transform .2s; }
+.tarjeta-servicio:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -22px rgba(57,60,100,.45); }
+
+/* Tarjeta de reseña + carrusel */
+.carrusel-pista { display: flex; gap: 1.5rem; transition: transform .5s cubic-bezier(.22,.61,.36,1); }
+.resena { flex: 0 0 85%; border-radius: 1.5rem; background: #ebf5f3; padding: 1.5rem; transition: background-color .3s; }
+@media (min-width: 640px) { .resena { flex-basis: calc((100% - 1.5rem) / 2); } }
+@media (min-width: 1024px) { .resena { flex-basis: calc((100% - 3rem) / 3); } }
+.resena.is-destacada { background: #aad7ca; }
+.flecha { display: inline-flex; width: 2.5rem; height: 2.5rem; align-items: center; justify-content: center; border-radius: 9999px; background: #393c64; color: #fff; font-size: 1.25rem; line-height: 1; }
+.flecha:hover { background: #474973; }
+.punto { width: .5rem; height: .5rem; border-radius: 9999px; background: #c7e4db; transition: width .3s, background-color .3s; }
+.punto.is-activo { width: 1.75rem; background: #393c64; }
+
+/* Pregunta frecuente */
+.faq { border-radius: 1rem; background: #ebf5f3; }
+.faq summary { display: flex; cursor: pointer; list-style: none; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; font-size: .875rem; font-weight: 600; color: #393c64; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq p { padding: 0 1.25rem 1.25rem; font-size: .875rem; line-height: 1.65; color: #474973; }
+.faq-signo::before { content: "+"; color: #ef7b28; font-size: 1.125rem; font-weight: 600; }
+.faq[open] .faq-signo::before { content: "–"; }
+
+/* Pie */
+.pie-titulo { font-size: .875rem; font-weight: 600; margin-bottom: .75rem; }
+.pie-lista { display: flex; flex-direction: column; gap: .4rem; font-size: .8125rem; }
+.pie-lista a:hover { text-decoration: underline; }
+
+/* Aviso flotante */
+.toast { position: fixed; left: 50%; bottom: 1.5rem; z-index: 50; transform: translate(-50%, 1rem); opacity: 0; pointer-events: none; border-radius: 9999px; background: #393c64; color: #fff; padding: .75rem 1.25rem; font-size: .875rem; font-weight: 500; box-shadow: 0 12px 30px -10px rgba(21,22,37,.5); transition: opacity .25s, transform .25s; }
+.toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
